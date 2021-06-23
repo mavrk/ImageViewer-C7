@@ -8,16 +8,16 @@ class Login extends Component{
       return(
             <div>
                 <Header title="Image Viewer"/>
-                <div className="card-container">
+                <div>
                     <Card className="login-card">
                         <CardContent>
                             <Typography variant="headline" component="h2"> LOGIN </Typography><br/>
-                            <FormControl>
+                            <FormControl required>
                                 <InputLabel htmlFor="username">Username</InputLabel>
                                 <Input id="username" type="text"></Input>
                             </FormControl> 
                             <br /><br />
-                            <FormControl>
+                            <FormControl required>
                                 <InputLabel htmlFor="password">Password</InputLabel>
                                 <Input id="password" type="password"></Input>
                             </FormControl>
