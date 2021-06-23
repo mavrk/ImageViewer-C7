@@ -1,0 +1,14 @@
+.card-container{
+    text-align: center;
+    display: flex;
+    margin-top: 2%;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.login-card{
+    width: 25%;
+    padding: 2% 4% 2% 4%;
+    margin: auto;
+    text-align: left;
+}

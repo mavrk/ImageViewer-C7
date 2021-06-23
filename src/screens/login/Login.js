@@ -1,6 +1,7 @@
 import React,{Component} from 'react';
 import Header from '../../common/header/Header';
 import {Card, CardContent, Typography, FormControl, Input, InputLabel, Button} from '@material-ui/core';
+import './Login.css';
 
 class Login extends Component{
   render(){
@@ -20,7 +21,7 @@ class Login extends Component{
                                 <InputLabel htmlFor="password">Password</InputLabel>
                                 <Input id="password" type="password"></Input>
                             </FormControl>
-                            <br /><br />
+                            <br /><br /><br />
                             <Button variant="contained" color="primary">LOGIN</Button>
                         </CardContent>
                     </Card>
