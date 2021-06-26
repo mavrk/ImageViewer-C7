@@ -1,0 +1,37 @@
+.card {
+    max-width: 1100px;
+    margin: 10px;
+}
+
+.avatar {
+    margin: 10px;
+}
+
+.media {
+    height: 0px; padding-top: 56.25%;
+}
+
+.formControl {
+    display: flex; flex-direction:row; justify-content:space-between; align-items:baseline;
+}
+
+.comment {
+    display: flex; 
+    align-items:center;
+}
+
+.hr {
+    margin-top: 10px; border-top:2px solid #f2f2f2
+}
+
+.gridList {
+    width: 1100px;
+     height: auto; overflow-y: auto;
+}
+
+.grid {
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    margin-top: 90px;
+}
