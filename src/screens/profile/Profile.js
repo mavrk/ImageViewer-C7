@@ -79,6 +79,7 @@ class Profile extends Component {
             that.setState({
                 profilePicture: UserData.profileImageUrl,
                 username: sessionStorage.getItem('username'),
+                postsCount: UserData.postsCount,
                 fullName: UserData.fullName,
                 followers: UserData.followers,
                 follows: UserData.follows,
@@ -105,6 +106,9 @@ class Profile extends Component {
         var result = this.state.mediaData.find(item => {
             return item.id === event.target.id
         })
+        result.likes = {
+          count: 10
+        }
         console.log(result);
         this.setState({ imageModalOpen: true, currentItem: result });
     }
@@ -129,7 +133,7 @@ class Profile extends Component {
         if (this.state.newFullName === "") { return }
 
         this.setState({
-            full_name: this.state.newFullName
+            fullName: this.state.newFullName
         })
 
         this.handleCloseEditModal()
@@ -190,7 +194,7 @@ class Profile extends Component {
 
     render() {
         let mediaData = this.state.mediaData;
-        let hashTags = [];
+        let hashTags = ["#react","#js","#npm","#java"];
         return (
             <div>
                 <Header
@@ -305,7 +309,7 @@ class Profile extends Component {
                                 {!this.state.likeSet.has(this.state.currentItem.id) && <FavoriteIconBorder/>}
                               </IconButton>
                               <Typography component="p">
-                                5 Likes
+                                {this.state.currentItem.likes.count} Likes
                               </Typography>
                             </div>
                             <div className="row">
