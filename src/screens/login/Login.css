@@ -13,6 +13,10 @@
     text-align: left;
 }
 
+.input-field {
+    width: 90%;
+}
+
 .dispNone {
     display: none;
  }
