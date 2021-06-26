@@ -18,7 +18,7 @@ class Login extends Component {
     }
 
     navigateToHome = () => {
-        this.props.history.push('/profile');
+        this.props.history.push('/home');
     }
 
     inputUsernameChangeHandler = (e) => {
@@ -36,8 +36,8 @@ class Login extends Component {
 
         if (this.state.username === "" || this.state.password === "") { return }
 
-        if (this.state.username === "admin" && this.state.password === "admin") {
-            sessionStorage.setItem('username', 'admin');
+        if (this.state.username === "landgang171" && this.state.password === "landgang171") {
+            sessionStorage.setItem('username', 'landgang171');
             sessionStorage.setItem('access-token', 'IGQVJXdmFKaTAwRk53cU5TQXpFNVd0Y1ozbVd2SWJUUkZAwRDhyZAEFPVFctNUgyX3lTaEpIYlFGa2JRWEVaMGVCQkR3RzJVdDU3Y2h0dEFhSGJHYjJMVlluSFZABbTYxOTdjM2RHVlBzaXNKbkxZANlExMgZDZD');
             this.setState({ loggedIn: true });
             this.navigateToHome();
@@ -51,7 +51,7 @@ class Login extends Component {
     render() {
         return (
             <div>
-                <Header title="Image Viewer" />
+                <Header title="Image Viewer" screen={"Login"}/>
                 <div className="card-container">
                     <Card className="login-card">
                         <CardContent>
