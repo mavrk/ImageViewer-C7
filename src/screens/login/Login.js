@@ -56,7 +56,7 @@ class Login extends Component {
                     <Card className="login-card">
                         <CardContent>
                             <Typography variant="h5"> LOGIN </Typography><br />
-                            <FormControl required>
+                            <FormControl required className="input-field">
                                 <InputLabel htmlFor="username">Username</InputLabel>
                                 <Input type="text" id="username" username={this.state.username} onChange={this.inputUsernameChangeHandler}></Input>
                                 <FormHelperText className={this.state.usernameRequired}>
@@ -64,7 +64,7 @@ class Login extends Component {
                                 </FormHelperText>
                             </FormControl>
                             <br /><br />
-                            <FormControl required>
+                            <FormControl required className="input-field">
                                 <InputLabel htmlFor="password">Password</InputLabel>
                                 <Input type="password" id="password" password={this.state.password} onChange={this.inputPasswordChangeHandler}></Input>
                                 <FormHelperText className={this.state.passwordRequired}>
